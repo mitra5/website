@@ -2,7 +2,7 @@
 // Using database connection file here
 
 
-$db = mysqli_connect("localhost","root","","6gic_db");
+$db = mysqli_connect("localhost","root","","dbNamae");
 
 if(!$db)
 {
@@ -44,9 +44,9 @@ if(isset($_POST['Save']))
     /* Success */
     
 
-    $insert = mysqli_query($db,"INSERT INTO equip_td(`name`, `model`,`place`,`useby`,`quantity`,`fee`) VALUES ('$name','$model','$place', '$usedby', '$quantity','$price')");
+    $insert = mysqli_query($db,"INSERT INTO table_tb(`name`, `model`,`place`,`useby`,`quantity`,`fee`) VALUES ('$name','$model','$place', '$usedby', '$quantity','$price')");
 
-    $insert = mysqli_query($db,"INSERT INTO auth_equip_db(`equip_id`) select id from equip_td where name='$name'");
+    $insert = mysqli_query($db,"INSERT INTO users_tb(`Tb_id`) select id from Tb_tb where name='$name'");
     }
 
     if(!$insert)
