@@ -54,7 +54,7 @@ if ($namm =="rahim"){
 	</nav>
 	
 	<?php
-		if($namm == 'rahim') {
+		if($namm == 'ssss') {
 			?>
 			<div class="manager" align="center" style=" margin: auto; ">
 			<form method="post" action="excel.php" style ="  margin: 100px auto; width: max-content;">
