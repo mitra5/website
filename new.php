@@ -6,11 +6,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 	$db = mysqli_connect("localhost","root","","6gic_db");
 
-//if(!$db)
-//{
-  //  die("Connection failed: " . mysqli_connect_error());
-//}
-
 if(isset($_POST['Save']))
 {	
 
